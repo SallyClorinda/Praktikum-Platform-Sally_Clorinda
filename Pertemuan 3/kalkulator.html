@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Kalkulator Sedherhana</title></head>
+    <body>
+        <script>
+            var a = prompt('Masukkan angka pertama');
+            var b = prompt('Masukkan angka kedua');
+            var choose = prompt('+, -, /, *');
+            
+            if(choose == '+'){
+                var hasil = Number(a) + Number(b);
+            }else if(choose == '-'){
+                var hasil = Number(a) - Number(b);
+            }else if(choose == '/'){
+                var hasil = Number(a) / Number(b);
+            }else if(choose == '*'){
+                var hasil = Number(a) * Number(b);
+            }
+
+            alert(Number(hasil));
+            console.log(hasil);
+        </script>
+    </body>
+</html>
+
+

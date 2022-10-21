@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kalkulator Tambah/Kurang</title>
+    <script type="text/javascript">
+        function tambah(){
+            var bilangan1 = document.getElementById("bil1").value;
+            var bilangan2 = document.getElementById("bil2").value;
+            console.log(bilangan1);
+            var hasil = document.getElementById("hasil");
+            var plus = Number(bilangan1) + Number(bilangan2);
+            document.getElementById("hasil").value = plus;
+        }
+
+        function kurang(){
+            var bilangan1 = document.getElementById("bil1").value;
+            var bilangan2 = document.getElementById("bil2").value;
+            console.log(bilangan1);
+            var hasil = document.getElementById("hasil");
+            var minus = Number(bilangan1) - Number(bilangan2);
+            document.getElementById("hasil").value = minus;
+        }
+
+        
+    </script>
+
+</head>
+<body>
+    <h1>Kalkulator Tambah/Kurang</h1>
+    <br><br>
+    <form action="#">
+
+        <label for="bilangan1">Bilangan 1: </label>
+        <input type="text" id="bil1" value="">
+        <br><br>
+        <label for="bilangan2">Bilangan 2: </label>
+        <input type="text" id="bil2" value="">
+        <br>
+        <input type="button" onclick="tambah()" value="Tambah" />
+
+        <input type="button" onclick="kurang()" value="Kurang" />
+        <br>
+        <label for="plus">Hasil</label>
+        <input type="text" id="hasil" value="">
+    </form>
+</body>
+</html>
+
+
+
